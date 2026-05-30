@@ -10,7 +10,9 @@ description: >
   learning conversation into Markdown notes. Also use when the user wants to
   read research papers, understand a method or pipeline, compare against a
   baseline, critique design choices, generate hypotheses, or connect learning to
-  their curiosity, research field, or familiar domain.
+  their curiosity, research field, or familiar domain. Also use when the user
+  wants to understand boundaries, limits, special cases, parent/general forms,
+  or how a concept changes when parameters or assumptions change.
 metadata:
   version: "0.1.0"
   compatible_with:
@@ -39,6 +41,7 @@ Choose one mode by intent:
 | Turn a session into a note | `note` | `references/note-templates.md` |
 | Drill with examples, counterexamples, or transfer questions | `exam` | `references/mental-model.md`; `references/workflows.md` |
 | Research learning, paper reading, hypothesis generation, method critique, innovation thinking | `disruptive` | `references/disruptive-thinking.md`; `references/workflows.md` |
+| Math/science/technical concepts with limits, boundaries, special cases, parent structures | `boundary` | `references/boundary-generalization.md`; `references/workflows.md` |
 
 If the user asks for a complete answer without interactive learning, give a
 concise explanation first, then offer a Feynman loop. If the user asks to create
@@ -63,11 +66,14 @@ ask to skip practice.
    familiar domain, then add disruptive thinking after the learner can
    explain the basic concept: change an assumption, remove a component, reverse
    a mechanism, stress a boundary, or transfer domains.
-10. For language learning, always include natural usage, contrast, example
+10. For math, science, ML, algorithms, and technical concepts, ask for boundary
+   behavior: limits, special cases, parent/general forms, validity assumptions,
+   and failure cases.
+11. For language learning, always include natural usage, contrast, example
    sentences, and common mistakes.
-11. When generating notes, use Obsidian-friendly Markdown with backlinks,
+12. When generating notes, use Obsidian-friendly Markdown with backlinks,
    aliases, tags, examples, and review questions.
-12. Do not invent factual claims. For current facts, sources, or disputed topics,
+13. Do not invent factual claims. For current facts, sources, or disputed topics,
    verify before presenting the final note.
 
 ## Core Loop
@@ -77,7 +83,7 @@ Default to this sequence:
 ```text
 one concept -> simplify -> teach-back -> one-gap diagnosis -> source/scaffold
 -> simplify again -> creative repetition -> disruptive perturbation when useful
--> transfer check -> Obsidian note
+-> boundary / limit check when useful -> transfer check -> Obsidian note
 ```
 
 Skip steps only when the user explicitly asks for a direct note or direct answer.
@@ -90,9 +96,12 @@ Use these labels when critiquing explanations:
 - `[jargon-shield]`: hides uncertainty behind technical words.
 - `[why-gap]`: says what happens but not why it matters.
 - `[mechanism-gap]`: skips the process or causal chain.
-- `[boundary-gap]`: cannot distinguish the concept from nearby concepts.
+- `[contrast-gap]`: cannot distinguish the concept from nearby concepts.
 - `[example-gap]`: lacks a concrete example or uses only memorized examples.
 - `[transfer-gap]`: fails when the concept is applied to a new case.
+- `[boundary-gap]`: cannot say where the concept fails, degenerates, or changes.
+- `[generalization-gap]`: cannot identify parent form, special cases, or sibling
+  concepts.
 - `[language-usage-gap]`: knows a translation but not when it sounds natural.
 
 Priority: fix factual errors first, then mechanism and boundary gaps, then style
@@ -170,6 +179,20 @@ paper reading, method learning, or innovation.
 如果这样改，什么会改变？哪里会最先坏掉？会产生什么新的问题？
 ```
 
+### Boundary and Generalization Prompt
+
+Use for math, science, ML, algorithms, and technical concepts after the learner
+can explain the standard case.
+
+```text
+现在做一次边界与母体检查：
+1. 它是谁的特例？更一般的形式是什么？
+2. 哪个参数、假设或约束把它固定成现在这样？
+3. 参数趋近 0、1、∞ 或临界值时会怎样？
+4. 假设变强/变弱/被移除时会怎样？
+5. 它在哪些边界条件下会失效、退化或连接到兄弟概念？
+```
+
 ### Paper or Pipeline Prompt
 
 Use for papers, model architectures, workflows, and experimental procedures.
@@ -194,8 +217,10 @@ When the learner says they are done, or asks for notes:
 3. Include the repaired gap and the final simplified version.
 4. For research-related sessions, include one disruptive perturbation and one
    possible research question or hypothesis.
-5. Produce an Obsidian note using `references/note-templates.md`.
-6. Add 3-5 review questions and 1 transfer question.
+5. For math/science/technical sessions, include boundary behavior, special cases,
+   and parent/general form when applicable.
+6. Produce an Obsidian note using `references/note-templates.md`.
+7. Add 3-5 review questions and 1 transfer question.
 
 ## Commands
 

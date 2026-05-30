@@ -56,6 +56,12 @@ created: YYYY-MM-DD
 
 {{transfer_question}}
 
+## Boundary and Generalization
+
+| Lens | Boundary / General Form | What Happens | Related Concept |
+|---|---|---|---|
+| {{lens}} | {{boundary_or_general_form}} | {{what_happens}} | {{related_concept}} |
+
 ## Disruptive Check
 
 Learner anchor: {{curiosity_or_domain_anchor}}

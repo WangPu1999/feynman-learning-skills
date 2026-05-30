@@ -4,7 +4,7 @@ Feynman Learning Skills is a shared skill repository for Codex and Cursor. It he
 
 ## Learning Philosophy
 
-Real learning is not the moment when an explanation sounds familiar. It is the moment when your brain can rebuild the idea without looking at the source. That requires retrieval, simplification, error, repair, transfer, and disruption. When you explain a concept in plain language, you force your mind to choose what matters, expose where the chain breaks, and connect the idea to examples you can actually use. The Feynman technique works because it turns learning from recognition into reconstruction. The research layer goes one step further: once you understand the standard version, you deliberately change an assumption, remove a component, reverse a mechanism, or move the idea into another domain. For papers and workflows, this means asking: what is the baseline, why did the authors design it this way, what would I change, what would break, and what experiment would prove it? That is where learning starts becoming hypothesis generation.
+Real learning is not the moment when an explanation sounds familiar. It is the moment when your brain can rebuild the idea without looking at the source. That requires retrieval, simplification, error, repair, transfer, boundary awareness, and disruption. When you explain a concept in plain language, you force your mind to choose what matters, expose where the chain breaks, and connect the idea to examples you can actually use. The Feynman technique works because it turns learning from recognition into reconstruction. The research layer goes one step further: once you understand the standard version, you ask where it breaks, what happens at the limit, which general form contains it, and what changes if an assumption, component, mechanism, or domain changes. For papers and workflows, this means asking: what is the baseline, why did the authors design it this way, what would I change, what would break, and what experiment would prove it? That is where learning starts becoming hypothesis generation.
 
 ## Flow at a Glance
 
@@ -26,6 +26,7 @@ skills/feynman-learning/
 - Provide minimal scaffolding only when the learner is stuck.
 - Use return-to-source review only to repair a specific gap, then require a new explanation.
 - Use creative repetition to build transfer across examples, analogies, contrasts, and contexts.
+- Use boundary and generalization checks to connect limits, assumptions, parent forms, and special cases.
 - Use disruptive thinking to test what changes when an assumption, component, mechanism, boundary, or domain changes.
 - For papers and pipelines, identify the baseline, design logic, possible modifications, failure risks, and experiments.
 - Anchor examples in the learner's curiosity, research field, or familiar domain.

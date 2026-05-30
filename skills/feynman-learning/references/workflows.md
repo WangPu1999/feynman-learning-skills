@@ -113,3 +113,24 @@ For a paper or workflow, use this reading sequence:
 baseline -> design reason -> if I changed it -> expected gain -> failure risk
 -> experiment or evidence needed
 ```
+
+## Boundary and Generalization Mode
+
+Use when the learner studies math, science, ML, algorithms, or any concept whose
+meaning changes under parameters, assumptions, scale, or edge cases.
+
+Only use this after the learner can explain the standard form. Then ask:
+
+- what is the parent or general form?
+- what are the special cases?
+- what happens at parameter limits?
+- what assumptions make it valid?
+- where does it degenerate or fail?
+- what sibling concepts appear when a parameter or constraint changes?
+
+Example pattern:
+
+```text
+parent form -> parameter/assumption -> special case -> limit behavior
+-> boundary/failure -> sibling concept
+```

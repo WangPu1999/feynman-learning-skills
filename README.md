@@ -10,7 +10,7 @@ A lightweight AI skill for learning concepts, language points, and domain vocabu
 
 ## Learning Philosophy
 
-Real learning is not the moment when an explanation sounds familiar. It is the moment when your brain can rebuild the idea without looking at the source. That requires retrieval, simplification, error, repair, transfer, and disruption. When you explain a concept in plain language, you force your mind to choose what matters, expose where the chain breaks, and connect the idea to examples you can actually use. The Feynman technique works because it turns learning from recognition into reconstruction. The research layer goes one step further: once you understand the standard version, you deliberately change an assumption, remove a component, reverse a mechanism, or move the idea into another domain. For papers and workflows, this means asking: what is the baseline, why did the authors design it this way, what would I change, what would break, and what experiment would prove it? That is where learning starts becoming hypothesis generation.
+Real learning is not the moment when an explanation sounds familiar. It is the moment when your brain can rebuild the idea without looking at the source. That requires retrieval, simplification, error, repair, transfer, boundary awareness, and disruption. When you explain a concept in plain language, you force your mind to choose what matters, expose where the chain breaks, and connect the idea to examples you can actually use. The Feynman technique works because it turns learning from recognition into reconstruction. The research layer goes one step further: once you understand the standard version, you ask where it breaks, what happens at the limit, which general form contains it, and what changes if an assumption, component, mechanism, or domain changes. For papers and workflows, this means asking: what is the baseline, why did the authors design it this way, what would I change, what would break, and what experiment would prove it? That is where learning starts becoming hypothesis generation.
 
 **Install in 30 seconds**:
 
@@ -87,6 +87,7 @@ Repository layout:
         │   ├── feynman-learn.md
         │   └── feynman-note.md
         └── references/
+            ├── boundary-generalization.md
             ├── disruptive-thinking.md
             ├── language-learning.md
             ├── mental-model.md
@@ -135,6 +136,7 @@ The installer copies `skills/feynman-learning/` into:
 - **Return-to-source loop** — review is used to repair a specific gap, then the learner explains again.
 - **Creative repetition** — the same idea is repeated through analogy, example, contrast, story, diagram-like description, or a new context.
 - **Error-as-map framing** — mistakes become precise repair targets instead of failure signals.
+- **Boundary and generalization checks** — ask what happens at parameter limits, which assumptions make the concept valid, and which parent form or special cases connect the concept family.
 - **Disruptive research thinking** — once the standard explanation is stable, change an assumption, remove a component, reverse a mechanism, stress a boundary, or transfer domains to generate deeper questions.
 - **Paper / pipeline reading protocol** — identify the baseline, reconstruct the author's design logic, propose your own modification, then test the likely failure mode.
 - **Curiosity and domain anchoring** — connect the new concept to the learner's interests, research field, or familiar domain before generating examples.
@@ -193,6 +195,7 @@ feynman-note: 把我刚才对贝叶斯更新的解释整理成 Obsidian 笔记�
 | `primer` | A short beginner ramp when the learner cannot start. |
 | `language` | Vocabulary, grammar, usage, register, collocations, and contrast pairs. |
 | `exam` | Transfer questions, counterexamples, and drills. |
+| `boundary` | Math and technical learning through limits, boundaries, parent forms, special cases, and sibling concepts. |
 | `disruptive` | Research and paper learning through baseline comparison, design critique, assumption changes, mechanism reversals, boundary stress, and domain transfer. |
 | `note` | Obsidian-ready Markdown note generation. |
 
@@ -248,6 +251,7 @@ Bayesian updating means changing your belief after seeing new evidence.
 - **Scaffold, then return control**: explanations are short and immediately followed by teach-back.
 - **Review must produce output**: returning to source is only useful when followed by a new explanation.
 - **Variation builds transfer**: repeat the concept in new forms until it works outside the original example.
+- **Boundaries reveal meaning**: understand what happens at limits, edge cases, and invalid assumptions.
 - **Disruption reveals structure**: change one part of the concept to see what breaks, what survives, and what new question appears.
 - **Notes after understanding**: the note is a result of the loop, not a substitute for it.
 - **Chinese-first, multilingual-friendly**: Chinese workflows are first-class, while English and language-learning use cases are supported directly.

@@ -10,7 +10,7 @@ A lightweight AI skill for learning concepts, language points, and domain vocabu
 
 ## Learning Philosophy
 
-Real learning is not the moment when an explanation sounds familiar. It is the moment when your brain can rebuild the idea without looking at the source. That requires retrieval, simplification, error, repair, and transfer. When you explain a concept in plain language, you force your mind to choose what matters, expose where the chain breaks, and connect the idea to examples you can actually use. The Feynman technique works because it turns learning from recognition into reconstruction: you do not merely read knowledge; you test whether you can regenerate it, teach it, vary it, and apply it somewhere new.
+Real learning is not the moment when an explanation sounds familiar. It is the moment when your brain can rebuild the idea without looking at the source. That requires retrieval, simplification, error, repair, transfer, and disruption. When you explain a concept in plain language, you force your mind to choose what matters, expose where the chain breaks, and connect the idea to examples you can actually use. The Feynman technique works because it turns learning from recognition into reconstruction. The research layer goes one step further: once you understand the standard version, you deliberately change an assumption, remove a component, reverse a mechanism, or move the idea into another domain. That is where learning starts becoming hypothesis generation.
 
 **Install in 30 seconds**:
 
@@ -28,7 +28,7 @@ Use feynman-learning to learn transformer attention and generate an Obsidian not
 
 > **AI is your learning coach, not your substitute memory.** This skill is designed to make you explain, notice gaps, repair them, and produce a durable note. It does not try to replace the learner with a summary machine.
 >
-> The core loop is intentionally strict: choose one concept, simplify it, teach it back, fix one gap, return to source or scaffold, repeat creatively, then write the note after understanding improves.
+> The core loop is intentionally strict: choose one concept, simplify it, teach it back, fix one gap, return to source or scaffold, repeat creatively, perturb the structure when useful, then write the note after understanding improves.
 
 ---
 
@@ -79,7 +79,9 @@ Repository layout:
         │   ├── feynman-learn.md
         │   └── feynman-note.md
         └── references/
+            ├── disruptive-thinking.md
             ├── language-learning.md
+            ├── mental-model.md
             ├── note-templates.md
             └── workflows.md
 ```
@@ -125,6 +127,7 @@ The installer copies `skills/feynman-learning/` into:
 - **Return-to-source loop** — review is used to repair a specific gap, then the learner explains again.
 - **Creative repetition** — the same idea is repeated through analogy, example, contrast, story, diagram-like description, or a new context.
 - **Error-as-map framing** — mistakes become precise repair targets instead of failure signals.
+- **Disruptive research thinking** — once the standard explanation is stable, change an assumption, remove a component, reverse a mechanism, stress a boundary, or transfer domains to generate deeper questions.
 - **Language learning mode** — vocabulary, grammar, register, collocations, contrast pairs, and natural example sentences.
 - **Exam mode** — transfer questions, counterexamples, and edge-case checks.
 - **Obsidian note generation** — concept notes and language notes with aliases, tags, examples, mistakes, and review questions.
@@ -174,6 +177,7 @@ feynman-note: 把我刚才对贝叶斯更新的解释整理成 Obsidian 笔记�
 | `primer` | A short beginner ramp when the learner cannot start. |
 | `language` | Vocabulary, grammar, usage, register, collocations, and contrast pairs. |
 | `exam` | Transfer questions, counterexamples, and drills. |
+| `disruptive` | Research learning through assumption changes, mechanism reversals, boundary stress, and domain transfer. |
 | `note` | Obsidian-ready Markdown note generation. |
 
 ---
@@ -228,6 +232,7 @@ Bayesian updating means changing your belief after seeing new evidence.
 - **Scaffold, then return control**: explanations are short and immediately followed by teach-back.
 - **Review must produce output**: returning to source is only useful when followed by a new explanation.
 - **Variation builds transfer**: repeat the concept in new forms until it works outside the original example.
+- **Disruption reveals structure**: change one part of the concept to see what breaks, what survives, and what new question appears.
 - **Notes after understanding**: the note is a result of the loop, not a substitute for it.
 - **Chinese-first, multilingual-friendly**: Chinese workflows are first-class, while English and language-learning use cases are supported directly.
 

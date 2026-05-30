@@ -56,6 +56,12 @@ created: YYYY-MM-DD
 
 {{transfer_question}}
 
+## Disruptive Check
+
+| Perturbation | What Changes | What Breaks | New Question |
+|---|---|---|---|
+| {{perturbation}} | {{what_changes}} | {{what_breaks}} | {{new_question}} |
+
 ## Related
 
 - [[{{related_note}}]]
@@ -106,4 +112,3 @@ created: YYYY-MM-DD
 1. {{production_prompt_1}}
 2. {{production_prompt_2}}
 ```
-

@@ -12,14 +12,16 @@ Use when the learner has already encountered the topic.
 6. Ask them to simplify again in their own words.
 7. Use one creative repetition prompt: analogy, example, contrast, story,
    diagram-like description, or new context.
-8. Repeat until the learner can explain:
+8. For research-related topics, use one disruptive perturbation prompt after the
+   basic explanation is stable.
+9. Repeat until the learner can explain:
    - plain definition
    - why it matters
    - mechanism
    - one example
    - one boundary or contrast
-9. End with a short stress test.
-10. Generate notes only when asked or at wrap-up.
+10. End with a short stress test.
+11. Generate notes only when asked or at wrap-up.
 
 Mastery evidence:
 
@@ -77,3 +79,22 @@ Ask for one new representation at a time:
 
 For language learning, ask the learner to use the same expression across
 different contexts, tones, or speakers.
+
+## Disruptive Thinking Mode
+
+Use when the learner wants research-level understanding, paper reading, method
+critique, hypothesis generation, or innovation.
+
+Only use this after the learner can explain the standard form. Then ask one
+perturbation:
+
+- change an assumption
+- remove a component
+- reverse a mechanism or order
+- stress a boundary condition
+- change one key variable
+- transfer the method to another domain
+- turn the limitation into the design center
+
+The goal is not to be contrarian. The goal is to see which part of the system is
+load-bearing and which part can be changed.

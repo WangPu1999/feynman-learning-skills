@@ -21,7 +21,8 @@ This skill is a learning coach for concepts and languages. The learner should
 produce understanding, not just receive a polished explanation. The default loop
 is the Feynman mental model: simplify one concept, teach it out loud or in
 writing, detect one gap, return to source or scaffold, repeat creatively, treat
-errors as a map, then save a note.
+errors as a map, perturb the concept through disruptive thinking when useful,
+then save a note.
 
 ## Routing
 
@@ -34,6 +35,7 @@ Choose one mode by intent:
 | Learn a word, grammar point, phrase, or usage distinction | `language` | `references/mental-model.md`; `references/language-learning.md` |
 | Turn a session into a note | `note` | `references/note-templates.md` |
 | Drill with examples, counterexamples, or transfer questions | `exam` | `references/mental-model.md`; `references/workflows.md` |
+| Research learning, paper reading, hypothesis generation, method critique, innovation thinking | `disruptive` | `references/disruptive-thinking.md`; `references/workflows.md` |
 
 If the user asks for a complete answer without interactive learning, give a
 concise explanation first, then offer a Feynman loop. If the user asks to create
@@ -54,11 +56,14 @@ ask to skip practice.
    enough.
 8. Use creative repetition: ask for a new analogy, context, example, diagram, or
    contrast when the learner seems familiar but not fluent.
-9. For language learning, always include natural usage, contrast, example
+9. For research-related learning, add disruptive thinking after the learner can
+   explain the basic concept: change an assumption, remove a component, reverse
+   a mechanism, stress a boundary, or transfer domains.
+10. For language learning, always include natural usage, contrast, example
    sentences, and common mistakes.
-10. When generating notes, use Obsidian-friendly Markdown with backlinks,
+11. When generating notes, use Obsidian-friendly Markdown with backlinks,
    aliases, tags, examples, and review questions.
-11. Do not invent factual claims. For current facts, sources, or disputed topics,
+12. Do not invent factual claims. For current facts, sources, or disputed topics,
    verify before presenting the final note.
 
 ## Core Loop
@@ -67,7 +72,8 @@ Default to this sequence:
 
 ```text
 one concept -> simplify -> teach-back -> one-gap diagnosis -> source/scaffold
--> simplify again -> creative repetition -> transfer check -> Obsidian note
+-> simplify again -> creative repetition -> disruptive perturbation when useful
+-> transfer check -> Obsidian note
 ```
 
 Skip steps only when the user explicitly asks for a direct note or direct answer.
@@ -143,6 +149,22 @@ Use after the learner repairs the main gap but still needs flexibility.
 4. 换到另一个场景里解释
 ```
 
+### Disruptive Perturbation Prompt
+
+Use after the learner can explain the standard version, especially for research,
+paper reading, method learning, or innovation.
+
+```text
+现在做一次破坏式理解检查。选一个环节改变：
+1. 改变一个前提
+2. 去掉一个组件
+3. 反转一个机制或顺序
+4. 推到边界/极端情况
+5. 换到另一个领域
+
+如果这样改，什么会改变？哪里会最先坏掉？会产生什么新的问题？
+```
+
 ### Wrap-Up
 
 When the learner says they are done, or asks for notes:
@@ -150,8 +172,10 @@ When the learner says they are done, or asks for notes:
 1. Summarize what changed in their understanding.
 2. Produce the refined explanation.
 3. Include the repaired gap and the final simplified version.
-4. Produce an Obsidian note using `references/note-templates.md`.
-5. Add 3-5 review questions and 1 transfer question.
+4. For research-related sessions, include one disruptive perturbation and one
+   possible research question or hypothesis.
+5. Produce an Obsidian note using `references/note-templates.md`.
+6. Add 3-5 review questions and 1 transfer question.
 
 ## Commands
 

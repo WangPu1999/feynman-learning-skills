@@ -1,4 +1,4 @@
-# Feynman Learning Skills for Codex and Cursor
+# Feynman Learning Skills
 
 [![Version](https://img.shields.io/badge/version-v0.1.0-blue)](https://github.com/WangPu1999/feynman-learning-skills)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)

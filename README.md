@@ -32,6 +32,14 @@ Use feynman-learning to learn transformer attention and generate an Obsidian not
 
 ---
 
+## Flow at a Glance
+
+![Feynman Learning Loop](assets/feynman-learning-loop.png)
+
+![Disruptive Paper Reading](assets/disruptive-paper-reading.png)
+
+---
+
 ## Why This Exists
 
 Most AI learning chats become polished explanations too quickly. They feel helpful, but the learner can still fail to explain the idea without the model.

@@ -6,6 +6,12 @@ Feynman Learning Skills is a shared skill repository for Codex and Cursor. It he
 
 Real learning is not the moment when an explanation sounds familiar. It is the moment when your brain can rebuild the idea without looking at the source. That requires retrieval, simplification, error, repair, transfer, and disruption. When you explain a concept in plain language, you force your mind to choose what matters, expose where the chain breaks, and connect the idea to examples you can actually use. The Feynman technique works because it turns learning from recognition into reconstruction. The research layer goes one step further: once you understand the standard version, you deliberately change an assumption, remove a component, reverse a mechanism, or move the idea into another domain. For papers and workflows, this means asking: what is the baseline, why did the authors design it this way, what would I change, what would break, and what experiment would prove it? That is where learning starts becoming hypothesis generation.
 
+## Flow at a Glance
+
+![Feynman Learning Loop](assets/feynman-learning-loop.png)
+
+![Disruptive Paper Reading](assets/disruptive-paper-reading.png)
+
 The canonical skill lives at:
 
 ```text

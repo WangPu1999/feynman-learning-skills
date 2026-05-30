@@ -7,7 +7,10 @@ description: >
   or Obsidian-ready note generation. Especially use when the user says they want
   to understand, explain in simple language, test understanding, learn a foreign
   language expression, create study notes, produce permanent notes, or convert a
-  learning conversation into Markdown notes.
+  learning conversation into Markdown notes. Also use when the user wants to
+  read research papers, understand a method or pipeline, compare against a
+  baseline, critique design choices, generate hypotheses, or connect learning to
+  their curiosity, research field, or familiar domain.
 metadata:
   version: "0.1.0"
   compatible_with:
@@ -56,7 +59,8 @@ ask to skip practice.
    enough.
 8. Use creative repetition: ask for a new analogy, context, example, diagram, or
    contrast when the learner seems familiar but not fluent.
-9. For research-related learning, add disruptive thinking after the learner can
+9. For research-related learning, first ask for the learner's curiosity and
+   familiar domain, then add disruptive thinking after the learner can
    explain the basic concept: change an assumption, remove a component, reverse
    a mechanism, stress a boundary, or transfer domains.
 10. For language learning, always include natural usage, contrast, example
@@ -107,6 +111,7 @@ Use the user's language.
 1. 它是什么？
 2. 它解决什么问题？
 3. 给一个具体例子。
+4. 你最感兴趣或最想弄懂的部分是什么？
 
 要求：用短句、简单词和日常例子。不要先背定义。
 ```
@@ -163,6 +168,21 @@ paper reading, method learning, or innovation.
 5. 换到另一个领域
 
 如果这样改，什么会改变？哪里会最先坏掉？会产生什么新的问题？
+```
+
+### Paper or Pipeline Prompt
+
+Use for papers, model architectures, workflows, and experimental procedures.
+
+```text
+我们按“baseline -> 设计理由 -> 如果是我 -> 缺陷/边界”来读：
+1. baseline 或最朴素做法是什么？
+2. 作者为什么要这样设计这个环节？
+3. 如果是你，你会怎么改？为什么？
+4. 这样改可能带来什么收益和风险？
+5. 需要什么实验或例子来验证？
+
+先告诉我：你自己的领域/熟悉场景是什么？我们会尽量用它来建立连接。
 ```
 
 ### Wrap-Up

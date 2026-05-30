@@ -85,8 +85,16 @@ different contexts, tones, or speakers.
 Use when the learner wants research-level understanding, paper reading, method
 critique, hypothesis generation, or innovation.
 
-Only use this after the learner can explain the standard form. Then ask one
-perturbation:
+Only use this after the learner can explain the standard form. For papers and
+pipelines, first identify:
+
+- the learner's curiosity or interest point
+- the learner's familiar domain
+- the baseline or default design
+- why the current design exists
+- the key steps in the pipeline
+
+Then ask one perturbation:
 
 - change an assumption
 - remove a component
@@ -98,3 +106,10 @@ perturbation:
 
 The goal is not to be contrarian. The goal is to see which part of the system is
 load-bearing and which part can be changed.
+
+For a paper or workflow, use this reading sequence:
+
+```text
+baseline -> design reason -> if I changed it -> expected gain -> failure risk
+-> experiment or evidence needed
+```

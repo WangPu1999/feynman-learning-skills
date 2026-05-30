@@ -58,9 +58,13 @@ created: YYYY-MM-DD
 
 ## Disruptive Check
 
-| Perturbation | What Changes | What Breaks | New Question |
-|---|---|---|---|
-| {{perturbation}} | {{what_changes}} | {{what_breaks}} | {{new_question}} |
+Learner anchor: {{curiosity_or_domain_anchor}}
+
+| Step | Baseline | Current Design | Why This Design | If I Changed It | Risk | Experiment |
+|---|---|---|---|---|---|---|
+| {{step}} | {{baseline}} | {{current_design}} | {{design_reason}} | {{my_change}} | {{risk}} | {{experiment}} |
+
+Possible research question: {{new_question}}
 
 ## Related
 

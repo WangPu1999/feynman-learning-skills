@@ -1,0 +1,4 @@
+display_name: Feynman Learning
+short_description: Learn concepts and languages through teach-back, gap repair, and Obsidian notes.
+default_prompt: Use feynman-learning to help me understand a concept and turn it into a note.
+

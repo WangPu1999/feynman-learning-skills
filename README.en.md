@@ -1,105 +1,69 @@
 # Feynman Learning Skills
 
-Feynman Learning Skills is a shared skill repository for Codex and Cursor. It helps learners understand concepts, language points, theories, methods, and domain vocabulary through the Feynman technique, then turns the learning session into Obsidian-friendly Markdown notes.
+Feynman Learning Skills is a shared skill repository for Codex and Cursor. It
+helps learners understand concepts, research papers, technical ideas, and
+IELTS/TOEFL English through curiosity-first Feynman learning.
 
 ## Learning Philosophy
 
-Real learning is not the moment when an explanation sounds familiar. It is the moment when your brain can rebuild the idea without looking at the source. That requires retrieval, simplification, error, repair, transfer, boundary awareness, and disruption. When you explain a concept in plain language, you force your mind to choose what matters, expose where the chain breaks, and connect the idea to examples you can actually use. The Feynman technique works because it turns learning from recognition into reconstruction. The research layer goes one step further: once you understand the standard version, you ask where it breaks, what happens at the limit, which general form contains it, and what changes if an assumption, component, mechanism, or domain changes. For papers and workflows, this means asking: what is the baseline, why did the authors design it this way, what would I change, what would break, and what experiment would prove it? That is where learning starts becoming hypothesis generation.
+Real learning is not recognition. It is reconstruction: your brain can rebuild
+the idea without looking at the source. This skill asks the learner to simplify,
+teach back, repair one gap, then connect the idea to curiosity, familiar fields,
+boundaries, or research questions.
 
-## Flow at a Glance
+## Flow
 
 ![Feynman Learning Loop](assets/feynman-learning-loop.png)
 
 ![Disruptive Paper Reading](assets/disruptive-paper-reading.png)
 
-The canonical skill lives at:
-
-```text
-skills/feynman-learning/
-```
-
-## Goals
-
-- Help the learner explain a concept in plain language.
-- Diagnose one understanding gap at a time.
-- Use Socratic questions before giving explanations.
-- Provide minimal scaffolding only when the learner is stuck.
-- Use return-to-source review only to repair a specific gap, then require a new explanation.
-- Use creative repetition to build transfer across examples, analogies, contrasts, and contexts.
-- Use boundary and generalization checks to connect limits, assumptions, parent forms, and special cases.
-- Use disruptive thinking to test what changes when an assumption, component, mechanism, boundary, or domain changes.
-- For papers and pipelines, identify the baseline, design logic, possible modifications, failure risks, and experiments.
-- Anchor examples in the learner's curiosity, research field, or familiar domain.
-- Support language learning with natural usage, examples, contrast pairs, and common mistakes.
-- Generate durable Obsidian notes after the learning loop.
-
 ## Install
 
-Install into Codex:
-
 ```bash
-./scripts/install.sh codex
-```
-
-Install into Cursor:
-
-```bash
-./scripts/install.sh cursor
-```
-
-Install into both:
-
-```bash
+git clone https://github.com/WangPu1999/feynman-learning-skills.git
+cd feynman-learning-skills
 ./scripts/install.sh all
-```
-
-## Usage
-
-Concept learning:
-
-```text
-Use feynman-learning to learn transformer attention and generate an Obsidian note.
-```
-
-Language learning:
-
-```text
-Use feynman-learning language mode for the Japanese particles は and が.
-```
-
-Note generation:
-
-```text
-feynman-note: turn my explanation of Bayesian updating into a permanent note.
 ```
 
 ## Modes
 
 | Mode | Purpose |
 |---|---|
-| `teach-back` | The learner explains first; the agent diagnoses one gap per turn. |
-| `primer` | Gives a short beginner ramp when the learner cannot start. |
-| `language` | Helps learn vocabulary, grammar, usage, register, and contrast pairs. |
-| `exam` | Generates transfer questions, counterexamples, and drills. |
-| `note` | Produces Obsidian-ready Markdown notes. |
+| Feynman loop | General concept learning through teach-back and one-gap repair. |
+| Boundary | Math/technical learning through limits, assumptions, parent forms, and special cases. |
+| Disruptive | Paper and pipeline learning through baseline, design logic, modification, risk, and experiment. |
+| IELTS/TOEFL English | Paraphrase, coherence, argument, academic register, and clear expression. |
+| Note | Obsidian-ready summary of the useful learning result. |
 
-## Repository Structure
+## Examples
 
 ```text
-.
-├── scripts/
-│   └── install.sh
-└── skills/
-    └── feynman-learning/
-        ├── SKILL.md
-        ├── agents/
-        ├── commands/
-        └── references/
+Use feynman-learning to understand Minkowski distance through boundaries and special cases.
+```
+
+```text
+Use feynman-learning disruptive mode to study C-JEPA: baseline, design choices, what I would change, and what experiment would test it.
+```
+
+```text
+Use feynman-learning for IELTS writing: help me paraphrase this idea without changing the meaning.
+```
+
+## Structure
+
+```text
+skills/feynman-learning/
+├── SKILL.md
+├── commands/
+└── references/
 ```
 
 ## Prior Art
 
-This project is inspired by public Feynman-technique skill repositories, by the workflow/agent separation used in academic research skill suites, and by Chinese learning content on the Feynman mental model such as [费曼的学习心智模型](https://www.bilibili.com/video/BV1bBCcBtEnA/). It is not a direct copy. This repository focuses on Chinese-first learning workflows, language learning, and Obsidian note generation.
+Inspired by Feynman-technique skills, academic research skill routing patterns,
+and Chinese learning content on the Feynman mental model. This project focuses
+on curiosity-first understanding, research learning, English ability, and
+Obsidian notes.
 
 ## License
 

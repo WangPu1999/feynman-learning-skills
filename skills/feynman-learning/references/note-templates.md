@@ -1,124 +1,78 @@
 # Obsidian Note Templates
 
-Use Markdown that can be pasted directly into Obsidian.
+Use concise Markdown. Include only sections that were actually useful in the
+session.
 
 ## Concept Note
 
 ```markdown
 ---
 aliases:
-  - 
+  -
 tags:
   - learning/feynman
-  - concept
 status: seedling
-created: YYYY-MM-DD
 ---
 
 # {{title}}
 
-## One-Sentence Version
+## Core Idea
 
-{{plain_one_sentence}}
+{{one_sentence}}
 
 ## Plain Explanation
 
-{{refined_explanation}}
+{{explanation}}
 
 ## Why It Matters
 
-{{why_it_matters}}
-
-## Mechanism
-
-{{step_by_step}}
+{{why}}
 
 ## Example
 
 {{example}}
 
-## Contrast
+## Repaired Gap
 
-{{nearby_concept}} is different because {{boundary}}.
+{{gap}}
 
-## Common Mistakes
+## Boundary / Generalization
 
-- {{mistake_1}}
-- {{mistake_2}}
+| Lens | What Happens | Related Concept |
+|---|---|---|
+| {{lens}} | {{what_happens}} | {{related_concept}} |
 
-## Review Questions
+## Research / Disruptive Check
 
-1. {{question_1}}
-2. {{question_2}}
-3. {{question_3}}
+| Step | Baseline | Current Design | If I Changed It | Risk | Experiment |
+|---|---|---|---|---|---|
+| {{step}} | {{baseline}} | {{current_design}} | {{my_change}} | {{risk}} | {{experiment}} |
 
-## Transfer Question
+## Review
 
-{{transfer_question}}
-
-## Boundary and Generalization
-
-| Lens | Boundary / General Form | What Happens | Related Concept |
-|---|---|---|---|
-| {{lens}} | {{boundary_or_general_form}} | {{what_happens}} | {{related_concept}} |
-
-## Disruptive Check
-
-Learner anchor: {{curiosity_or_domain_anchor}}
-
-| Step | Baseline | Current Design | Why This Design | If I Changed It | Risk | Experiment |
-|---|---|---|---|---|---|---|
-| {{step}} | {{baseline}} | {{current_design}} | {{design_reason}} | {{my_change}} | {{risk}} | {{experiment}} |
-
-Possible research question: {{new_question}}
-
-## Related
-
-- [[{{related_note}}]]
+- {{question_1}}
+- {{question_2}}
+- {{transfer_question}}
 ```
 
-## Language Note
+## English Note
 
 ```markdown
----
-aliases:
-  - 
-tags:
-  - learning/feynman
-  - language
-status: seedling
-created: YYYY-MM-DD
----
+# {{expression_or_task}}
 
-# {{expression}}
+## Meaning / Goal
 
-## Core Meaning
+{{meaning_or_goal}}
 
-{{meaning}}
+## Better Version
 
-## When It Sounds Natural
+{{revision}}
 
-{{usage_context}}
+## Why It Works
 
-## Examples
+{{reason}}
 
-| Sentence | Natural Translation | Note |
-|---|---|---|
-| {{sentence_1}} | {{translation_1}} | {{note_1}} |
-| {{sentence_2}} | {{translation_2}} | {{note_2}} |
-| {{sentence_3}} | {{translation_3}} | {{note_3}} |
+## Try Again
 
-## Contrast
-
-{{contrast}}
-
-## Common Mistakes
-
-- {{mistake_1}}
-- {{mistake_2}}
-
-## Make Your Own
-
-1. {{production_prompt_1}}
-2. {{production_prompt_2}}
+{{new_prompt}}
 ```

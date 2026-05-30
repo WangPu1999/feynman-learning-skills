@@ -83,9 +83,8 @@ feynman-note: turn my explanation of Bayesian updating into a permanent note.
 
 ## Prior Art
 
-This project is inspired by public Feynman-technique skill repositories and by the workflow/agent separation used in academic research skill suites. It is not a direct copy. This repository focuses on Chinese-first learning workflows, language learning, and Obsidian note generation.
+This project is inspired by public Feynman-technique skill repositories, by the workflow/agent separation used in academic research skill suites, and by Chinese learning content on the Feynman mental model such as [费曼的学习心智模型](https://www.bilibili.com/video/BV1bBCcBtEnA/). It is not a direct copy. This repository focuses on Chinese-first learning workflows, language learning, and Obsidian note generation.
 
 ## License
 
 MIT
-

@@ -27,8 +27,8 @@ Choose one mode by intent:
 
 | User intent | Mode | Read |
 |---|---|---|
-| Learn or test a concept | `teach-back` | `references/workflows.md` |
-| User cannot start explaining | `primer` | `references/workflows.md` |
+| Learn or test a concept | `teach-back` | `references/workflows.md`; optionally `references/mental-model.md` |
+| User cannot start explaining | `primer` | `references/workflows.md`; optionally `references/mental-model.md` |
 | Learn a word, grammar point, phrase, or usage distinction | `language` | `references/language-learning.md` |
 | Turn a session into a note | `note` | `references/note-templates.md` |
 | Drill with examples, counterexamples, or transfer questions | `exam` | `references/workflows.md` |
@@ -43,11 +43,15 @@ notes, produce the note directly after a brief gap check.
 2. Diagnose one gap per turn. Do not list every flaw at once.
 3. Prefer questions over lectures. Give scaffolding only when the learner is
    stuck or asks for help.
-4. For language learning, always include natural usage, contrast, example
+4. Treat mistakes as a map to the next repair target, not as a reason to end the
+   session.
+5. Use creative repetition: ask for a new analogy, context, example, diagram, or
+   contrast when the learner seems familiar but not fluent.
+6. For language learning, always include natural usage, contrast, example
    sentences, and common mistakes.
-5. When generating notes, use Obsidian-friendly Markdown with backlinks,
+7. When generating notes, use Obsidian-friendly Markdown with backlinks,
    aliases, tags, examples, and review questions.
-6. Do not invent factual claims. For current facts, sources, or disputed topics,
+8. Do not invent factual claims. For current facts, sources, or disputed topics,
    verify before presenting the final note.
 
 ## Gap Categories
@@ -127,4 +131,3 @@ prompt recipes when the user invokes a plain alias:
 
 Keep live coaching responses short. Do not create a long note until the user
 asks for a note, finishes the loop, or explicitly asks to skip coaching.
-

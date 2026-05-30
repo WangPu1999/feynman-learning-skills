@@ -226,9 +226,8 @@ Bayesian updating means changing your belief after seeing new evidence.
 
 ## Prior Art
 
-This project is inspired by public Feynman-technique skill repositories and by the workflow / agent / reference separation used in academic research skill suites. It is not a direct copy. The focus here is learning concepts and languages, then producing Obsidian-ready notes.
+This project is inspired by public Feynman-technique skill repositories, by the workflow / agent / reference separation used in academic research skill suites, and by Chinese learning content on the Feynman mental model such as [费曼的学习心智模型](https://www.bilibili.com/video/BV1bBCcBtEnA/). It is not a direct copy. The focus here is learning concepts and languages, then producing Obsidian-ready notes.
 
 ## License
 
 MIT
-

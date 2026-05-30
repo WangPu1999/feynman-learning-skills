@@ -7,14 +7,16 @@ Use when the learner has already encountered the topic.
 1. Ask for a simple explanation.
 2. Identify the highest-priority gap.
 3. Ask one repair question.
-4. Repeat until the learner can explain:
+4. If the learner is stuck, send them to a minimal scaffold or source review.
+5. Ask them to simplify again in their own words.
+6. Repeat until the learner can explain:
    - plain definition
    - why it matters
    - mechanism
    - one example
    - one boundary or contrast
-5. End with a short stress test.
-6. Generate notes only when asked or at wrap-up.
+7. End with a short stress test.
+8. Generate notes only when asked or at wrap-up.
 
 Mastery evidence:
 
@@ -53,3 +55,19 @@ Question types:
 
 Give feedback after each answer. Prefer one correction at a time.
 
+## Creative Repetition
+
+Use when the learner understands the basic explanation but cannot yet apply it
+flexibly.
+
+Ask for one new representation at a time:
+
+- explain through an everyday analogy
+- explain with a concrete example
+- explain as a short story
+- explain with a contrast pair
+- explain in a new domain
+- explain with a diagram-like verbal description
+
+For language learning, ask the learner to use the same expression across
+different contexts, tones, or speakers.

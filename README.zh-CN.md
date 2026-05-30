@@ -83,9 +83,8 @@ feynman-note: 把我对贝叶斯更新的解释整理成永久笔记。
 
 ## 设计来源
 
-这个项目借鉴了公开的 Feynman technique skill 项目，以及 academic research skills 中的 workflow / agent / reference 分层设计。但本仓库不是直接复制，重点是中文优先、概念学习、语言学习，以及 Obsidian 笔记沉淀。
+这个项目借鉴了公开的 Feynman technique skill 项目、academic research skills 中的 workflow / agent / reference 分层设计，以及中文费曼学习内容，例如 [费曼的学习心智模型](https://www.bilibili.com/video/BV1bBCcBtEnA/)。但本仓库不是直接复制，重点是中文优先、概念学习、语言学习，以及 Obsidian 笔记沉淀。
 
 ## 许可证
 
 MIT
-

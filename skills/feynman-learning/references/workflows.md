@@ -35,6 +35,7 @@ Do not run all branches. Pick one:
 - math/technical -> boundary/generalization
 - paper/pipeline -> disruptive reading
 - IELTS/TOEFL English -> English ability
+- interview prep -> interview preparation
 - note request -> concise Obsidian note
 
 If the learner's curiosity is satisfied, stop and summarize.

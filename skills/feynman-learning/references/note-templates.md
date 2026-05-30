@@ -48,6 +48,16 @@ status: seedling
 |---|---|---|---|---|---|
 | {{step}} | {{baseline}} | {{current_design}} | {{my_change}} | {{risk}} | {{experiment}} |
 
+## Interview Answer
+
+Claim: {{claim}}
+
+Evidence: {{project_or_experience}}
+
+Tradeoff: {{tradeoff}}
+
+Likely follow-up: {{follow_up}}
+
 ## Review
 
 - {{question_1}}

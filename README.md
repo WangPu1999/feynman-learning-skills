@@ -1,8 +1,57 @@
-# Feynman Learning Skills
+# Feynman Learning Skills for Codex and Cursor
 
-Feynman Learning Skills is a shared skill repository for Codex and Cursor. It helps learners understand concepts, language points, theories, methods, and domain vocabulary through the Feynman technique, then turns the learning session into Obsidian-friendly Markdown notes.
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](https://github.com/WangPu1999/feynman-learning-skills)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Skills](https://img.shields.io/badge/skills-Codex%20%7C%20Cursor-purple)](skills/feynman-learning)
 
-中文说明见下方：[中文](#费曼学习法-skills)
+[简体中文](README.zh-CN.md) | [English](README.en.md)
+
+A lightweight AI skill for learning concepts, language points, and domain vocabulary with the Feynman technique, then turning the session into Obsidian-ready notes.
+
+**Install in 30 seconds**:
+
+```bash
+git clone https://github.com/WangPu1999/feynman-learning-skills.git
+cd feynman-learning-skills
+./scripts/install.sh all
+```
+
+Then try:
+
+```text
+Use feynman-learning to learn transformer attention and generate an Obsidian note.
+```
+
+> **AI is your learning coach, not your substitute memory.** This skill is designed to make you explain, notice gaps, repair them, and produce a durable note. It does not try to replace the learner with a summary machine.
+>
+> The core loop is intentionally strict: explain first, fix one gap at a time, scaffold only when stuck, then write the note after understanding improves.
+
+---
+
+## Why This Exists
+
+Most AI learning chats become polished explanations too quickly. They feel helpful, but the learner can still fail to explain the idea without the model.
+
+This skill optimizes for active recall and teach-back:
+
+- You explain the concept in your own words.
+- The agent identifies the most important gap.
+- You repair that gap through a focused question or small scaffold.
+- The agent tests transfer with examples, contrasts, or edge cases.
+- The final output becomes an Obsidian note you can review later.
+
+It is especially useful for:
+
+- concept learning
+- language learning
+- paper or book note refinement
+- programming concepts
+- technical vocabulary
+- turning messy learning sessions into permanent notes
+
+---
+
+## Architecture
 
 The canonical skill lives at:
 
@@ -10,16 +59,32 @@ The canonical skill lives at:
 skills/feynman-learning/
 ```
 
-## Goals
+Repository layout:
 
-- Help the learner explain a concept in plain language.
-- Diagnose one understanding gap at a time.
-- Use Socratic questions before giving explanations.
-- Provide minimal scaffolding only when the learner is stuck.
-- Support language learning with natural usage, examples, contrast pairs, and common mistakes.
-- Generate durable Obsidian notes after the learning loop.
+```text
+.
+├── scripts/
+│   └── install.sh
+└── skills/
+    └── feynman-learning/
+        ├── SKILL.md
+        ├── agents/
+        │   └── openai.yaml
+        ├── commands/
+        │   ├── feynman-language.md
+        │   ├── feynman-learn.md
+        │   └── feynman-note.md
+        └── references/
+            ├── language-learning.md
+            ├── note-templates.md
+            └── workflows.md
+```
 
-## Install
+`SKILL.md` is the router. Detailed workflow behavior is progressively loaded from `references/` only when needed.
+
+---
+
+## Quick Install
 
 Install into Codex:
 
@@ -39,148 +104,131 @@ Install into both:
 ./scripts/install.sh all
 ```
 
+The installer copies `skills/feynman-learning/` into:
+
+```text
+~/.codex/skills/feynman-learning
+~/.cursor/skills/feynman-learning
+```
+
+---
+
+## Features at a Glance
+
+- **Teach-back learning** — the learner explains first; the agent diagnoses one gap per turn.
+- **Socratic repair** — the agent asks targeted questions before giving explanations.
+- **Minimal scaffold** — short explanation plus one example only when the learner is stuck.
+- **Language learning mode** — vocabulary, grammar, register, collocations, contrast pairs, and natural example sentences.
+- **Exam mode** — transfer questions, counterexamples, and edge-case checks.
+- **Obsidian note generation** — concept notes and language notes with aliases, tags, examples, mistakes, and review questions.
+- **Codex / Cursor compatibility** — one canonical skill directory, installed into either environment.
+
+---
+
 ## Usage
 
-Concept learning:
+### Concept Learning
+
+```text
+Use feynman-learning to help me understand Bayesian updating.
+```
 
 ```text
 Use feynman-learning to learn transformer attention and generate an Obsidian note.
 ```
 
-Language learning:
+### Language Learning
 
 ```text
 Use feynman-learning language mode for the Japanese particles は and が.
 ```
 
-Note generation:
+```text
+用 feynman-learning 帮我区分 affect 和 effect，并生成语言笔记。
+```
+
+### Note Generation
 
 ```text
-feynman-note: turn my explanation of Bayesian updating into a permanent note.
+feynman-note: turn my explanation of gradient descent into a permanent note.
 ```
+
+```text
+feynman-note: 把我刚才对贝叶斯更新的解释整理成 Obsidian 笔记。
+```
+
+---
 
 ## Modes
 
 | Mode | Purpose |
 |---|---|
-| `teach-back` | The learner explains first; the agent diagnoses one gap per turn. |
-| `primer` | Gives a short beginner ramp when the learner cannot start. |
-| `language` | Helps learn vocabulary, grammar, usage, register, and contrast pairs. |
-| `exam` | Generates transfer questions, counterexamples, and drills. |
-| `note` | Produces Obsidian-ready Markdown notes. |
-
-## Repository Structure
-
-```text
-.
-├── scripts/
-│   └── install.sh
-└── skills/
-    └── feynman-learning/
-        ├── SKILL.md
-        ├── agents/
-        ├── commands/
-        └── references/
-```
-
-## Prior Art
-
-This project is inspired by public Feynman-technique skill repositories and by the workflow/agent separation used in academic research skill suites. It is not a direct copy. This repository focuses on Chinese-first learning workflows, language learning, and Obsidian note generation.
-
-## License
-
-MIT
+| `teach-back` | The default loop: explain, diagnose one gap, repair, test. |
+| `primer` | A short beginner ramp when the learner cannot start. |
+| `language` | Vocabulary, grammar, usage, register, collocations, and contrast pairs. |
+| `exam` | Transfer questions, counterexamples, and drills. |
+| `note` | Obsidian-ready Markdown note generation. |
 
 ---
 
-# 费曼学习法 Skills
+## Output Examples
 
-这是一个面向 Codex 和 Cursor 的学习型 skills 仓库。它用于学习概念、语言点、理论、方法和领域词汇：先通过费曼学习法暴露理解漏洞，再用最小支架补齐，最后生成适合 Obsidian 沉淀的 Markdown 笔记。
+### Concept Note
 
-核心 skill 位于：
+```markdown
+---
+aliases:
+  - Bayesian updating
+tags:
+  - learning/feynman
+  - concept
+status: seedling
+---
 
-```text
-skills/feynman-learning/
+# Bayesian Updating
+
+## One-Sentence Version
+
+Bayesian updating means changing your belief after seeing new evidence.
+
+## Review Questions
+
+1. What was the prior belief?
+2. What new evidence arrived?
+3. Why did the belief move more or less strongly?
 ```
 
-## 目标
+### Language Note
 
-- 让学习者先用自己的话解释概念，而不是直接接收答案。
-- 每轮只诊断一个理解漏洞，避免一次性抛出过多反馈。
-- 优先用苏格拉底式追问，而不是直接讲解。
-- 只有在学习者卡住时，才给最小必要解释和例子。
-- 支持语言学习：自然用法、例句、近义表达对比、语域、常见错误。
-- 在学习结束后生成 Obsidian 友好的永久笔记。
+```markdown
+# は vs が
 
-## 安装
+## Core Contrast
 
-安装到 Codex：
+は marks the topic of what we are talking about. が often marks the subject that is newly identified, emphasized, or contrasted.
 
-```bash
-./scripts/install.sh codex
+## Common Mistake
+
+- Do not translate both as simply "is"; they organize information differently.
 ```
 
-安装到 Cursor：
+---
 
-```bash
-./scripts/install.sh cursor
-```
+## Design Principles
 
-同时安装到 Codex 和 Cursor：
+- **Active recall over passive reading**: the learner must produce an explanation.
+- **One gap at a time**: feedback stays focused enough to act on.
+- **Scaffold, then return control**: explanations are short and immediately followed by teach-back.
+- **Notes after understanding**: the note is a result of the loop, not a substitute for it.
+- **Chinese-first, multilingual-friendly**: Chinese workflows are first-class, while English and language-learning use cases are supported directly.
 
-```bash
-./scripts/install.sh all
-```
+---
 
-## 使用示例
+## Prior Art
 
-学习概念：
+This project is inspired by public Feynman-technique skill repositories and by the workflow / agent / reference separation used in academic research skill suites. It is not a direct copy. The focus here is learning concepts and languages, then producing Obsidian-ready notes.
 
-```text
-用 feynman-learning 帮我学习 transformer attention，并生成 Obsidian 笔记。
-```
-
-学习语言：
-
-```text
-用 feynman-learning 的 language mode 帮我学习日语的 は 和 が。
-```
-
-生成笔记：
-
-```text
-feynman-note: 把我对贝叶斯更新的解释整理成永久笔记。
-```
-
-## 模式
-
-| 模式 | 用途 |
-|---|---|
-| `teach-back` | 学习者先解释，AI 每轮指出一个最关键漏洞。 |
-| `primer` | 学习者完全开不了口时，先给一个很短的入门支架。 |
-| `language` | 学习词汇、语法、表达、语域、近义表达和自然用法。 |
-| `exam` | 生成迁移题、反例题和练习题。 |
-| `note` | 生成 Obsidian 可直接使用的 Markdown 笔记。 |
-
-## 仓库结构
-
-```text
-.
-├── scripts/
-│   └── install.sh
-└── skills/
-    └── feynman-learning/
-        ├── SKILL.md
-        ├── agents/
-        ├── commands/
-        └── references/
-```
-
-## 设计来源
-
-这个项目借鉴了公开的 Feynman technique skill 项目，以及 academic research skills 中的 workflow / agent / reference 分层设计。但本仓库不是直接复制，重点是中文优先、概念学习、语言学习，以及 Obsidian 笔记沉淀。
-
-## 许可证
+## License
 
 MIT
 

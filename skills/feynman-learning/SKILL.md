@@ -73,7 +73,10 @@ curiosity -> one target -> simplify -> teach-back -> one gap
 10. For graduate interviews, prepare research stories, project stories,
    technical fundamentals, role fit, behavioral evidence, English expression,
    and follow-up questions.
-11. Mark uncertain factual claims as needing verification.
+11. For technical interview questions, route back to the Feynman loop first if
+   the underlying concept is unfamiliar or fuzzy; do not force an interview
+   answer before concept clarity.
+12. Mark uncertain factual claims as needing verification.
 
 ## Gap Labels
 
@@ -161,6 +164,8 @@ curiosity -> one target -> simplify -> teach-back -> one gap
 4. 你能用哪段论文/项目/实习/课程经历证明？
 5. 你的贡献、取舍、失败、评估和反思是什么？
 6. 可能被追问什么？你如何回答？
+
+如果这是技术基础题，但概念还讲不清：先回到费曼循环，把概念、机制、例子和边界讲清楚，再组织面试答案。
 ```
 
 ### Wrap-Up

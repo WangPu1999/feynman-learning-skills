@@ -24,6 +24,33 @@ Pick the relevant surface instead of drilling everything:
 - **English interview**: concise academic/professional expression, paraphrase,
   and follow-up handling.
 
+## Technical Concept Fallback
+
+Technical interviews often expose concepts the learner has not met or cannot
+yet explain. Do not force a polished interview answer when the concept is fuzzy.
+
+Use this route:
+
+```text
+unfamiliar concept -> Feynman loop -> boundary check if technical
+-> concise interview answer -> likely follow-ups
+```
+
+Ask:
+
+```text
+你能不能先不用术语解释这个概念？
+如果不能，我们先回到费曼循环，把它讲清楚，再转成面试答案。
+```
+
+Only return to the interview frame after the learner can explain:
+
+- what it is
+- why it matters
+- how it works
+- one concrete example
+- one boundary, tradeoff, or common follow-up
+
 ## Answer Shape
 
 Use the smallest shape that fits:

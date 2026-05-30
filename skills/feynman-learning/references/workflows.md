@@ -39,3 +39,7 @@ Do not run all branches. Pick one:
 - note request -> concise Obsidian note
 
 If the learner's curiosity is satisfied, stop and summarize.
+
+For technical interview prep, concept clarity comes first. If the concept is
+unfamiliar or fuzzy, route back to the Feynman loop before composing the
+interview answer.

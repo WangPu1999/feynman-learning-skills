@@ -6,8 +6,12 @@
 
 [简体中文](README.zh-CN.md) | [English](README.en.md)
 
-A curiosity-first learning skill for concepts, research papers, technical ideas,
-IELTS/TOEFL English, and interview preparation.
+A curiosity-first learning skill for master's students: concepts, research
+papers, technical ideas, IELTS/TOEFL English, and job/internship interview
+preparation.
+
+It is designed to cover four common graduate-student needs: learning and exams,
+English ability, research development, and career preparation.
 
 Real learning is not "I recognize this answer." It is "I can rebuild it, explain
 it, stress its boundary, and use it in a new situation." This skill turns
@@ -40,7 +44,7 @@ cd feynman-learning-skills
 | Boundary | Math/technical learning through limits, assumptions, parent forms, and special cases. |
 | Disruptive | Paper and pipeline learning through baseline, design logic, modification, risk, and experiment. |
 | IELTS/TOEFL English | Paraphrase, coherence, argument, academic register, and clear expression. |
-| Interview prep | Job and internship interview answers through concept clarity, project stories, tradeoffs, and follow-ups. |
+| Interview prep | Graduate job and internship prep: research stories, projects, fundamentals, role fit, tradeoffs, and follow-ups. |
 | Note | Obsidian-ready summary of the useful learning result. |
 
 ## Examples
@@ -61,6 +65,13 @@ Use feynman-learning for IELTS writing: help me paraphrase this idea without cha
 Use feynman-learning for internship interview prep: help me explain my project, tradeoffs, and likely follow-up questions.
 ```
 
+## Other Tools
+
+This repository is not limited to Codex or Cursor. For Claude Code, Trae, or
+similar agent tools, clone the repository and ask the tool to read
+`skills/feynman-learning/SKILL.md`. The `references/` files are intentionally
+plain Markdown so other agents can follow the same workflow.
+
 ## Structure
 
 ```text
@@ -79,8 +90,8 @@ Use feynman-learning for internship interview prep: help me explain my project, 
 
 Inspired by Feynman-technique skills, academic research skill routing patterns,
 and Chinese learning content on the Feynman mental model. This project focuses
-on curiosity-first understanding, research learning, English ability, interview
-preparation, and Obsidian notes.
+on curiosity-first understanding for master's students: learning, research,
+English ability, interview preparation, and Obsidian notes.
 
 ## License
 

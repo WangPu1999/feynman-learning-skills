@@ -5,8 +5,8 @@ description: >
   research paper, method, pipeline, mathematical idea, scientific model,
   programming concept, or domain vocabulary through curiosity-first Feynman
   learning, teach-back, gap repair, boundary checks, disruptive research
-  thinking, IELTS/TOEFL-oriented English learning, job/internship interview
-  preparation, or Obsidian-ready note generation.
+  thinking, IELTS/TOEFL-oriented English learning, graduate job/internship
+  interview preparation, or Obsidian-ready note generation.
 metadata:
   version: "0.1.0"
   compatible_with:
@@ -17,10 +17,10 @@ metadata:
 # Feynman Learning
 
 Curiosity-first learning for concepts, research, math, technical ideas,
-IELTS/TOEFL-oriented English, and interview preparation. The goal is not
-scoring, completionism, or running every checklist. The goal is to satisfy the
-learner's curiosity by building an explanation they can regenerate, vary, and
-connect to their own field, goals, or stories.
+IELTS/TOEFL-oriented English, and graduate interview preparation. The goal is
+not scoring, completionism, or running every checklist. The goal is to satisfy a
+master's student's curiosity and practical goals across learning, research,
+English, and career preparation.
 
 ## First Move
 
@@ -42,7 +42,7 @@ Default to one depth branch:
 | Math/science/technical concept | Boundary/generalization | `references/boundary-generalization.md` |
 | Paper, method, architecture, process | Disruptive paper/pipeline reading | `references/disruptive-thinking.md` |
 | IELTS/TOEFL English | Exam English ability | `references/language-learning.md` |
-| Job or internship interview | Interview preparation | `references/interview-prep.md` |
+| Graduate job/internship interview | Interview preparation | `references/interview-prep.md` |
 | User asks for note | Obsidian note | `references/note-templates.md` |
 
 Escalate to another branch only if the user asks, seems stuck, or the concept
@@ -70,8 +70,9 @@ curiosity -> one target -> simplify -> teach-back -> one gap
    assumptions, and failure boundaries.
 9. For IELTS/TOEFL English, optimize for clarity, paraphrase, argument, academic
    expression, and meaning-preserving language use rather than scores.
-10. For interviews, optimize for clear explanation, concrete project stories,
-   tradeoffs, constraints, and follow-up questions.
+10. For graduate interviews, prepare research stories, project stories,
+   technical fundamentals, role fit, behavioral evidence, English expression,
+   and follow-up questions.
 11. Mark uncertain factual claims as needing verification.
 
 ## Gap Labels
@@ -153,12 +154,13 @@ curiosity -> one target -> simplify -> teach-back -> one gap
 ### Interview Prep Check
 
 ```text
-按这个顺序准备面试回答：
+按研究生求职/实习面试来准备：
 1. 面试官真正想考什么？
-2. 你的简洁答案是什么？
-3. 你能用哪个项目/经历证明？
-4. 你做过什么取舍？为什么？
-5. 可能被追问什么？你如何回答？
+2. 这是科研故事、项目故事、技术基础、岗位匹配、行为面，还是英文表达？
+3. 你的简洁答案是什么？
+4. 你能用哪段论文/项目/实习/课程经历证明？
+5. 你的贡献、取舍、失败、评估和反思是什么？
+6. 可能被追问什么？你如何回答？
 ```
 
 ### Wrap-Up
@@ -171,4 +173,4 @@ When wrapping up, produce only what is useful:
 - optional Obsidian note
 - for research: baseline/design/change/risk/experiment
 - for math/technical: parent form/special cases/boundaries
-- for interview: concise answer/project story/tradeoffs/follow-ups
+- for interview: answer/research or project evidence/tradeoffs/follow-ups

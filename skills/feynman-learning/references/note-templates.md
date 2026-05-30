@@ -52,9 +52,11 @@ status: seedling
 
 Claim: {{claim}}
 
-Evidence: {{project_or_experience}}
+Evidence: {{research_project_or_experience}}
 
 Tradeoff: {{tradeoff}}
+
+Contribution: {{my_contribution}}
 
 Likely follow-up: {{follow_up}}
 

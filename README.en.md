@@ -1,9 +1,12 @@
 # Feynman Learning Skills
 
 Feynman Learning Skills is a shared skill repository for Codex and Cursor. It
-helps learners understand concepts, research papers, technical ideas,
-IELTS/TOEFL English, and interview questions through curiosity-first Feynman
-learning.
+helps master's students understand concepts, research papers, technical ideas,
+IELTS/TOEFL English, and job/internship interview questions through
+curiosity-first Feynman learning.
+
+It is designed to cover four common graduate-student needs: learning and exams,
+English ability, research development, and career preparation.
 
 ## Learning Philosophy
 
@@ -37,7 +40,7 @@ cd feynman-learning-skills
 | Boundary | Math/technical learning through limits, assumptions, parent forms, and special cases. |
 | Disruptive | Paper and pipeline learning through baseline, design logic, modification, risk, and experiment. |
 | IELTS/TOEFL English | Paraphrase, coherence, argument, academic register, and clear expression. |
-| Interview prep | Job and internship interview answers through concept clarity, project stories, tradeoffs, and follow-ups. |
+| Interview prep | Graduate job and internship prep: research stories, projects, fundamentals, role fit, tradeoffs, and follow-ups. |
 | Note | Obsidian-ready summary of the useful learning result. |
 
 ## Examples
@@ -58,6 +61,12 @@ Use feynman-learning for IELTS writing: help me paraphrase this idea without cha
 Use feynman-learning for internship interview prep: help me explain my project, tradeoffs, and likely follow-up questions.
 ```
 
+## Other Tools
+
+For Claude Code, Trae, or similar agent tools, clone this repository and ask the
+tool to read `skills/feynman-learning/SKILL.md`. The workflow is plain Markdown,
+so other tools can use it by reading the skill and its `references/` files.
+
 ## Structure
 
 ```text
@@ -71,8 +80,8 @@ skills/feynman-learning/
 
 Inspired by Feynman-technique skills, academic research skill routing patterns,
 and Chinese learning content on the Feynman mental model. This project focuses
-on curiosity-first understanding, research learning, English ability, interview
-preparation, and Obsidian notes.
+on curiosity-first understanding for master's students: learning, research,
+English ability, interview preparation, and Obsidian notes.
 
 ## License
 

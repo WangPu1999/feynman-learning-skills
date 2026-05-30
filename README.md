@@ -8,6 +8,10 @@
 
 A lightweight AI skill for learning concepts, language points, and domain vocabulary with the Feynman technique, then turning the session into Obsidian-ready notes.
 
+## Learning Philosophy
+
+Real learning is not the moment when an explanation sounds familiar. It is the moment when your brain can rebuild the idea without looking at the source. That requires retrieval, simplification, error, repair, and transfer. When you explain a concept in plain language, you force your mind to choose what matters, expose where the chain breaks, and connect the idea to examples you can actually use. The Feynman technique works because it turns learning from recognition into reconstruction: you do not merely read knowledge; you test whether you can regenerate it, teach it, vary it, and apply it somewhere new.
+
 **Install in 30 seconds**:
 
 ```bash

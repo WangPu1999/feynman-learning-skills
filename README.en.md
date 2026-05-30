@@ -2,6 +2,10 @@
 
 Feynman Learning Skills is a shared skill repository for Codex and Cursor. It helps learners understand concepts, language points, theories, methods, and domain vocabulary through the Feynman technique, then turns the learning session into Obsidian-friendly Markdown notes.
 
+## Learning Philosophy
+
+Real learning is not the moment when an explanation sounds familiar. It is the moment when your brain can rebuild the idea without looking at the source. That requires retrieval, simplification, error, repair, and transfer. When you explain a concept in plain language, you force your mind to choose what matters, expose where the chain breaks, and connect the idea to examples you can actually use. The Feynman technique works because it turns learning from recognition into reconstruction: you do not merely read knowledge; you test whether you can regenerate it, teach it, vary it, and apply it somewhere new.
+
 The canonical skill lives at:
 
 ```text

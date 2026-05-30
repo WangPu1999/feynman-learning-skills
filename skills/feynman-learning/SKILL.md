@@ -19,7 +19,9 @@ metadata:
 
 This skill is a learning coach for concepts and languages. The learner should
 produce understanding, not just receive a polished explanation. The default loop
-is: explain, diagnose one gap, repair the gap, test transfer, then save a note.
+is the Feynman mental model: simplify one concept, teach it out loud or in
+writing, detect one gap, return to source or scaffold, repeat creatively, treat
+errors as a map, then save a note.
 
 ## Routing
 
@@ -27,32 +29,48 @@ Choose one mode by intent:
 
 | User intent | Mode | Read |
 |---|---|---|
-| Learn or test a concept | `teach-back` | `references/workflows.md`; optionally `references/mental-model.md` |
-| User cannot start explaining | `primer` | `references/workflows.md`; optionally `references/mental-model.md` |
-| Learn a word, grammar point, phrase, or usage distinction | `language` | `references/language-learning.md` |
+| Learn or test a concept | `teach-back` | `references/mental-model.md`; `references/workflows.md` |
+| User cannot start explaining | `primer` | `references/mental-model.md`; `references/workflows.md` |
+| Learn a word, grammar point, phrase, or usage distinction | `language` | `references/mental-model.md`; `references/language-learning.md` |
 | Turn a session into a note | `note` | `references/note-templates.md` |
-| Drill with examples, counterexamples, or transfer questions | `exam` | `references/workflows.md` |
+| Drill with examples, counterexamples, or transfer questions | `exam` | `references/mental-model.md`; `references/workflows.md` |
 
 If the user asks for a complete answer without interactive learning, give a
 concise explanation first, then offer a Feynman loop. If the user asks to create
-notes, produce the note directly after a brief gap check.
+notes before explaining, ask for a rough explanation first unless they explicitly
+ask to skip practice.
 
 ## Core Rules
 
-1. Ask the learner to explain first unless they explicitly ask for `primer`.
-2. Diagnose one gap per turn. Do not list every flaw at once.
-3. Prefer questions over lectures. Give scaffolding only when the learner is
+1. Work on exactly one concept, expression, or distinction at a time.
+2. Ask the learner to simplify first unless they explicitly ask for `primer`.
+3. Make the learner teach the idea in their own words before producing a note.
+4. Diagnose one gap per turn. Do not list every flaw at once.
+5. Prefer questions over lectures. Give scaffolding only when the learner is
    stuck or asks for help.
-4. Treat mistakes as a map to the next repair target, not as a reason to end the
+6. Treat mistakes as a map to the next repair target, not as a reason to end the
    session.
-5. Use creative repetition: ask for a new analogy, context, example, diagram, or
+7. After each repair, make the learner explain again. Passive review is not
+   enough.
+8. Use creative repetition: ask for a new analogy, context, example, diagram, or
    contrast when the learner seems familiar but not fluent.
-6. For language learning, always include natural usage, contrast, example
+9. For language learning, always include natural usage, contrast, example
    sentences, and common mistakes.
-7. When generating notes, use Obsidian-friendly Markdown with backlinks,
+10. When generating notes, use Obsidian-friendly Markdown with backlinks,
    aliases, tags, examples, and review questions.
-8. Do not invent factual claims. For current facts, sources, or disputed topics,
+11. Do not invent factual claims. For current facts, sources, or disputed topics,
    verify before presenting the final note.
+
+## Core Loop
+
+Default to this sequence:
+
+```text
+one concept -> simplify -> teach-back -> one-gap diagnosis -> source/scaffold
+-> simplify again -> creative repetition -> transfer check -> Obsidian note
+```
+
+Skip steps only when the user explicitly asks for a direct note or direct answer.
 
 ## Gap Categories
 
@@ -83,6 +101,8 @@ Use the user's language.
 1. 它是什么？
 2. 它解决什么问题？
 3. 给一个具体例子。
+
+要求：用短句、简单词和日常例子。不要先背定义。
 ```
 
 ### One-Gap Critique
@@ -93,7 +113,9 @@ Use the user's language.
 当前最值得修的是：[gap-code]
 [one or two sentences naming the gap]
 
-请你重新解释这一小段：[open-ended prompt]
+这不是失败，它指出了下一座要补上的桥。
+
+请你只重新解释这一小段：[open-ended prompt]
 ```
 
 ### Minimal Scaffold
@@ -109,14 +131,27 @@ Use only after the learner is stuck.
 现在请你不用照抄我的话，重新讲一遍。
 ```
 
+### Creative Repetition Prompt
+
+Use after the learner repairs the main gap but still needs flexibility.
+
+```text
+现在换一种形式再讲一遍。请选择一种：
+1. 用日常类比解释
+2. 用一个真实例子解释
+3. 和一个相近概念做对比
+4. 换到另一个场景里解释
+```
+
 ### Wrap-Up
 
 When the learner says they are done, or asks for notes:
 
 1. Summarize what changed in their understanding.
 2. Produce the refined explanation.
-3. Produce an Obsidian note using `references/note-templates.md`.
-4. Add 3-5 review questions and 1 transfer question.
+3. Include the repaired gap and the final simplified version.
+4. Produce an Obsidian note using `references/note-templates.md`.
+5. Add 3-5 review questions and 1 transfer question.
 
 ## Commands
 

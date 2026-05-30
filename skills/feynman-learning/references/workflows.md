@@ -4,19 +4,22 @@
 
 Use when the learner has already encountered the topic.
 
-1. Ask for a simple explanation.
-2. Identify the highest-priority gap.
-3. Ask one repair question.
-4. If the learner is stuck, send them to a minimal scaffold or source review.
-5. Ask them to simplify again in their own words.
-6. Repeat until the learner can explain:
+1. Select exactly one concept or distinction.
+2. Ask for a simple explanation with short sentences and an everyday example.
+3. Identify the highest-priority gap.
+4. Ask one repair question.
+5. If the learner is stuck, send them to a minimal scaffold or source review.
+6. Ask them to simplify again in their own words.
+7. Use one creative repetition prompt: analogy, example, contrast, story,
+   diagram-like description, or new context.
+8. Repeat until the learner can explain:
    - plain definition
    - why it matters
    - mechanism
    - one example
    - one boundary or contrast
-7. End with a short stress test.
-8. Generate notes only when asked or at wrap-up.
+9. End with a short stress test.
+10. Generate notes only when asked or at wrap-up.
 
 Mastery evidence:
 
@@ -39,6 +42,9 @@ Output:
 6. Ask the learner to explain back in their own words.
 
 Do not turn primer mode into a full lesson.
+
+After primer mode, immediately switch to teach-back mode. The primer is not the
+learning outcome.
 
 ## Exam Mode
 

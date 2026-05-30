@@ -24,7 +24,7 @@ Use feynman-learning to learn transformer attention and generate an Obsidian not
 
 > **AI is your learning coach, not your substitute memory.** This skill is designed to make you explain, notice gaps, repair them, and produce a durable note. It does not try to replace the learner with a summary machine.
 >
-> The core loop is intentionally strict: explain first, fix one gap at a time, scaffold only when stuck, then write the note after understanding improves.
+> The core loop is intentionally strict: choose one concept, simplify it, teach it back, fix one gap, return to source or scaffold, repeat creatively, then write the note after understanding improves.
 
 ---
 
@@ -118,6 +118,9 @@ The installer copies `skills/feynman-learning/` into:
 - **Teach-back learning** — the learner explains first; the agent diagnoses one gap per turn.
 - **Socratic repair** — the agent asks targeted questions before giving explanations.
 - **Minimal scaffold** — short explanation plus one example only when the learner is stuck.
+- **Return-to-source loop** — review is used to repair a specific gap, then the learner explains again.
+- **Creative repetition** — the same idea is repeated through analogy, example, contrast, story, diagram-like description, or a new context.
+- **Error-as-map framing** — mistakes become precise repair targets instead of failure signals.
 - **Language learning mode** — vocabulary, grammar, register, collocations, contrast pairs, and natural example sentences.
 - **Exam mode** — transfer questions, counterexamples, and edge-case checks.
 - **Obsidian note generation** — concept notes and language notes with aliases, tags, examples, mistakes, and review questions.
@@ -219,6 +222,8 @@ Bayesian updating means changing your belief after seeing new evidence.
 - **Active recall over passive reading**: the learner must produce an explanation.
 - **One gap at a time**: feedback stays focused enough to act on.
 - **Scaffold, then return control**: explanations are short and immediately followed by teach-back.
+- **Review must produce output**: returning to source is only useful when followed by a new explanation.
+- **Variation builds transfer**: repeat the concept in new forms until it works outside the original example.
 - **Notes after understanding**: the note is a result of the loop, not a substitute for it.
 - **Chinese-first, multilingual-friendly**: Chinese workflows are first-class, while English and language-learning use cases are supported directly.
 

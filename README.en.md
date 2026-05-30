@@ -14,6 +14,8 @@ skills/feynman-learning/
 - Diagnose one understanding gap at a time.
 - Use Socratic questions before giving explanations.
 - Provide minimal scaffolding only when the learner is stuck.
+- Use return-to-source review only to repair a specific gap, then require a new explanation.
+- Use creative repetition to build transfer across examples, analogies, contrasts, and contexts.
 - Support language learning with natural usage, examples, contrast pairs, and common mistakes.
 - Generate durable Obsidian notes after the learning loop.
 

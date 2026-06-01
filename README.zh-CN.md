@@ -25,6 +25,12 @@ cd feynman-learning-skills
 ./scripts/install.sh all
 ```
 
+如果只想预览安装位置、不修改文件：
+
+```bash
+./scripts/install.sh --dry-run all
+```
+
 ## 模式
 
 | 模式 | 用途 |
@@ -32,6 +38,7 @@ cd feynman-learning-skills
 | 费曼循环 | 普通概念学习：讲出来、找一个漏洞、修补、再解释。 |
 | 边界/母体 | 数学和技术概念：极限、假设、特例、母体、兄弟概念。 |
 | 破坏式阅读 | 论文和流程学习：baseline、设计理由、如果是我、风险、实验。 |
+| 科研成长 | 研究生科研训练：阶段判断、能力目标、项目闭环、实验、写作和组会。 |
 | IELTS/TOEFL 英语 | 改写、连贯、论证、学术表达和清晰表达。 |
 | 面试准备 | 研究生求职和实习：科研故事、项目经历、技术基础、岗位匹配、取舍、追问。 |
 | 笔记 | 生成精简 Obsidian 学习笔记。 |
@@ -39,19 +46,23 @@ cd feynman-learning-skills
 ## 示例
 
 ```text
-用 feynman-learning 帮我通过边界和特例理解 Minkowski 距离。
+帮我通过边界和特例理解 Minkowski 距离。
 ```
 
 ```text
-用 feynman-learning disruptive mode 学 C-JEPA：baseline、设计选择、如果是我怎么改、怎么实验验证。
+我想学 C-JEPA：baseline、设计选择、如果是我怎么改、怎么实验验证。
 ```
 
 ```text
-用 feynman-learning 练 IELTS 写作：帮我在不改变意思的情况下改写这个观点。
+我刚进实验室，想知道下一阶段该怎么训练科研能力。
 ```
 
 ```text
-用 feynman-learning 准备实习面试：帮我讲清楚项目、技术取舍和可能追问。
+我想练 IELTS 写作：帮我在不改变意思的情况下改写这个观点。
+```
+
+```text
+帮我准备实习面试：讲清楚项目、技术取舍和可能追问。
 ```
 
 ## 其他工具
@@ -69,7 +80,14 @@ skills/feynman-learning/
 
 ## 设计来源
 
-项目借鉴了费曼学习法、academic research skills 的路由结构，以及中文费曼学习内容。重点是面向硕士研究生的好奇心优先学习、科研、英语能力、面试准备和 Obsidian 笔记。
+项目借鉴了费曼学习法、academic research skills 的路由结构、中文费曼学习内容，以及
+[pengsida](https://github.com/pengsida) 的公开科研训练笔记，尤其是
+[pengsida/learning_research](https://github.com/pengsida/learning_research)。
+重点是面向硕士研究生的好奇心优先学习、科研、英语能力、面试准备和 Obsidian 笔记。
+
+[`pengsida/learning_research`](https://github.com/pengsida/learning_research)
+在本仓库中作为科研训练思想来源引用。由于上游仓库当前没有明确 license 文件，本仓库不直接
+vendor 或复制其全文内容。
 
 ## 许可证
 

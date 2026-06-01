@@ -1,17 +1,15 @@
 ---
 name: feynman-learning
 description: >
-  Use this skill when the user wants to learn a concept, language point,
-  research paper, method, pipeline, mathematical idea, scientific model,
-  programming concept, or domain vocabulary through curiosity-first Feynman
-  learning, teach-back, gap repair, boundary checks, disruptive research
-  thinking, IELTS/TOEFL-oriented English learning, graduate job/internship
-  interview preparation, or Obsidian-ready note generation.
-metadata:
-  version: "0.1.0"
-  compatible_with:
-    - codex
-    - cursor
+  Use this skill whenever the user wants to learn, understand, explain,
+  clarify, rebuild, review, or study a concept, language point, research paper,
+  method, pipeline, mathematical idea, scientific model, programming concept,
+  or domain vocabulary. Trigger it for natural learning requests such as "I
+  want to understand X", "teach me X", "help me learn X", "explain X in simple
+  words", "我想学/理解/搞懂 X", "帮我讲清楚 X", "这篇论文/这个方法我没懂", IELTS/TOEFL
+  English learning, graduate job/internship interview preparation, research
+  ability building, research project planning, or Obsidian-ready note
+  generation. The user does not need to mention Feynman or the skill name.
 ---
 
 # Feynman Learning
@@ -41,12 +39,37 @@ Default to one depth branch:
 | General concept | Feynman loop | `references/workflows.md`, `references/mental-model.md` |
 | Math/science/technical concept | Boundary/generalization | `references/boundary-generalization.md` |
 | Paper, method, architecture, process | Disruptive paper/pipeline reading | `references/disruptive-thinking.md` |
+| Research growth or project planning | Research ability roadmap | `references/research-growth.md` |
 | IELTS/TOEFL English | Exam English ability | `references/language-learning.md` |
 | Graduate job/internship interview | Interview preparation | `references/interview-prep.md` |
 | User asks for note | Obsidian note | `references/note-templates.md` |
 
 Escalate to another branch only if the user asks, seems stuck, or the concept
 requires it.
+
+## Reference Map
+
+Load only the files needed for the active branch:
+
+- `references/workflows.md`: core Feynman loop, primer, and anti-divergence.
+- `references/mental-model.md`: concise learning principles.
+- `references/boundary-generalization.md`: math, science, ML, algorithms, and
+  technical concepts.
+- `references/disruptive-thinking.md`: papers, methods, architectures, research
+  ideas, and workflows.
+- `references/research-growth.md`: staged research learning, project planning,
+  idea formation, experiment ability, writing, presentation, and advisor meeting
+  preparation.
+- `references/learning-research.md`: attribution and distilled lessons from
+  `pengsida/learning_research`; use it when the learner asks for research-growth
+  guidance inspired by that project.
+- `references/language-learning.md`: IELTS/TOEFL reading, listening, speaking,
+  writing, vocabulary, paraphrase, and academic expression.
+- `references/interview-prep.md`: graduate jobs, internships, research
+  interviews, project stories, technical fundamentals, role fit, and follow-up
+  handling.
+- `references/note-templates.md`: concise Obsidian notes after a useful learning
+  result exists.
 
 ## Core Loop
 
@@ -76,7 +99,14 @@ curiosity -> one target -> simplify -> teach-back -> one gap
 11. For technical interview questions, route back to the Feynman loop first if
    the underlying concept is unfamiliar or fuzzy; do not force an interview
    answer before concept clarity.
-12. Mark uncertain factual claims as needing verification.
+12. For research growth, identify the learner's stage before giving advice:
+   broad foundation, project participation, independent first-author project, or
+   mature research roadmap.
+13. Mark uncertain factual claims as needing verification.
+14. Do not create a long lecture unless the user explicitly asks for one; prefer
+   one short scaffold and a teach-back prompt.
+15. When the user asks for a direct answer, give the smallest useful answer
+   first, then invite teach-back if learning is the goal.
 
 ## Gap Labels
 
@@ -154,6 +184,18 @@ curiosity -> one target -> simplify -> teach-back -> one gap
 5. 需要什么实验验证？
 ```
 
+### Research Growth Check
+
+```text
+先判断你在哪个阶段：
+1. 打基础：需要广度、课程、作业、工具和概念地图。
+2. 跟项目：需要读懂一篇论文的算法细节、代码细节和实验细节。
+3. 做一作项目：需要选题、idea、实验、写作、展示和投稿闭环。
+4. 建长期路线：需要重要问题、roadmap、系列工作和领域视野。
+
+当前只选一个能力训练：找问题、想 idea、做实验、分析失败、写论文、做 presentation、开会汇报。
+```
+
 ### Interview Prep Check
 
 ```text
@@ -177,5 +219,10 @@ When wrapping up, produce only what is useful:
 - one transfer question
 - optional Obsidian note
 - for research: baseline/design/change/risk/experiment
+- for research growth: current stage/one target ability/next concrete project
+  action/advisor or peer discussion question
 - for math/technical: parent form/special cases/boundaries
 - for interview: answer/research or project evidence/tradeoffs/follow-ups
+
+Do not include unused sections, generic study advice, or a full transcript of the
+session.

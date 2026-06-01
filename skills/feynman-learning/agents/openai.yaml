@@ -1,3 +1,3 @@
 display_name: Feynman Learning
 short_description: Curiosity-first learning for concepts, research papers, technical ideas, IELTS/TOEFL English, and interviews.
-default_prompt: Use feynman-learning to help me understand this through curiosity, teach-back, and one focused learning branch.
+default_prompt: Help me understand this concept through curiosity, teach-back, and one focused learning branch.

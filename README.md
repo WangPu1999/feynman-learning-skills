@@ -36,6 +36,12 @@ cd feynman-learning-skills
 ./scripts/install.sh all
 ```
 
+Preview install targets without changing files:
+
+```bash
+./scripts/install.sh --dry-run all
+```
+
 ## Modes
 
 | Mode | Purpose |
@@ -43,6 +49,7 @@ cd feynman-learning-skills
 | Feynman loop | General concept learning through teach-back and one-gap repair. |
 | Boundary | Math/technical learning through limits, assumptions, parent forms, and special cases. |
 | Disruptive | Paper and pipeline learning through baseline, design logic, modification, risk, and experiment. |
+| Research growth | Graduate research training: stage, ability target, project loop, experiments, writing, and meetings. |
 | IELTS/TOEFL English | Paraphrase, coherence, argument, academic register, and clear expression. |
 | Interview prep | Graduate job and internship prep: research stories, projects, fundamentals, role fit, tradeoffs, and follow-ups. |
 | Note | Obsidian-ready summary of the useful learning result. |
@@ -50,19 +57,23 @@ cd feynman-learning-skills
 ## Examples
 
 ```text
-Use feynman-learning to understand Minkowski distance through boundaries and special cases.
+Help me understand Minkowski distance through boundaries and special cases.
 ```
 
 ```text
-Use feynman-learning disruptive mode to study C-JEPA: baseline, design choices, what I would change, and what experiment would test it.
+I want to study C-JEPA: baseline, design choices, what I would change, and what experiment would test it.
 ```
 
 ```text
-Use feynman-learning for IELTS writing: help me paraphrase this idea without changing the meaning.
+我刚进实验室，想知道下一阶段该怎么训练科研能力。
 ```
 
 ```text
-Use feynman-learning for internship interview prep: help me explain my project, tradeoffs, and likely follow-up questions.
+For IELTS writing, help me paraphrase this idea without changing the meaning.
+```
+
+```text
+Help me prepare for an internship interview: explain my project, tradeoffs, and likely follow-up questions.
 ```
 
 ## Other Tools
@@ -89,9 +100,16 @@ plain Markdown so other agents can follow the same workflow.
 ## Prior Art
 
 Inspired by Feynman-technique skills, academic research skill routing patterns,
-and Chinese learning content on the Feynman mental model. This project focuses
-on curiosity-first understanding for master's students: learning, research,
-English ability, interview preparation, and Obsidian notes.
+Chinese learning content on the Feynman mental model, and public research
+training notes by [pengsida](https://github.com/pengsida), especially
+[pengsida/learning_research](https://github.com/pengsida/learning_research).
+This project focuses on curiosity-first understanding for master's students:
+learning, research, English ability, interview preparation, and Obsidian notes.
+
+[`pengsida/learning_research`](https://github.com/pengsida/learning_research)
+is referenced as an external source of research training ideas. Its content is
+not vendored into this repository because the upstream repository does not
+currently include an explicit license file.
 
 ## License
 

@@ -25,6 +25,12 @@ cd feynman-learning-skills
 ./scripts/install.sh all
 ```
 
+拉取外部参考仓库：
+
+```bash
+git submodule update --init --recursive
+```
+
 如果只想预览安装位置、不修改文件：
 
 ```bash
@@ -72,10 +78,14 @@ cd feynman-learning-skills
 ## 结构
 
 ```text
-skills/feynman-learning/
-├── SKILL.md
-├── commands/
-└── references/
+.
+├── external/
+│   └── learning_research/      # Git submodule: pengsida/learning_research
+└── skills/
+    └── feynman-learning/
+        ├── SKILL.md
+        ├── commands/
+        └── references/
 ```
 
 ## 设计来源
@@ -86,8 +96,9 @@ skills/feynman-learning/
 重点是面向硕士研究生的好奇心优先学习、科研、英语能力、面试准备和 Obsidian 笔记。
 
 [`pengsida/learning_research`](https://github.com/pengsida/learning_research)
-在本仓库中作为科研训练思想来源引用。由于上游仓库当前没有明确 license 文件，本仓库不直接
-vendor 或复制其全文内容。
+在本仓库中作为科研训练思想来源引用，并以 Git submodule 的形式固定在
+`external/learning_research`。由于上游仓库当前没有明确 license 文件，它的内容仍作为外部参考，
+不属于本仓库 MIT license 的覆盖范围。
 
 ## 许可证
 

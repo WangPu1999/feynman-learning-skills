@@ -1,0 +1,3 @@
+[submodule "external/learning_research"]
+	path = external/learning_research
+	url = https://github.com/pengsida/learning_research.git

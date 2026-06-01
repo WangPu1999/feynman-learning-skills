@@ -36,6 +36,12 @@ cd feynman-learning-skills
 ./scripts/install.sh all
 ```
 
+Fetch external reference repositories:
+
+```bash
+git submodule update --init --recursive
+```
+
 Preview install targets without changing files:
 
 ```bash
@@ -88,6 +94,8 @@ plain Markdown so other agents can follow the same workflow.
 ```text
 .
 ├── assets/
+├── external/
+│   └── learning_research/      # Git submodule: pengsida/learning_research
 ├── scripts/
 │   └── install.sh
 └── skills/
@@ -108,8 +116,10 @@ learning, research, English ability, interview preparation, and Obsidian notes.
 
 [`pengsida/learning_research`](https://github.com/pengsida/learning_research)
 is referenced as an external source of research training ideas. Its content is
-not vendored into this repository because the upstream repository does not
-currently include an explicit license file.
+included as a Git submodule under `external/learning_research`, pinned to an
+upstream commit. The upstream repository does not currently include an explicit
+license file, so its content remains an external reference and is not covered by
+this repository's MIT license.
 
 ## License
 

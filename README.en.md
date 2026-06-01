@@ -8,6 +8,13 @@ curiosity-first Feynman learning.
 It is designed to cover four common graduate-student needs: learning and exams,
 English ability, research development, and career preparation.
 
+It starts from questions many learners recognize:
+
+- Why can you score well on an exam, then forget almost everything one week
+  later?
+- Why can you spend years learning a foreign language from primary school
+  through university, yet still feel the result is weak?
+
 ## Learning Philosophy
 
 Real learning is not "I recognize this answer." It is "I can rebuild it, explain

@@ -62,7 +62,7 @@ Preview install targets without changing files:
 | Feynman loop | General concept learning through teach-back and one-gap repair. |
 | Boundary | Math/technical learning through limits, assumptions, parent forms, and special cases. |
 | Disruptive | Paper and pipeline learning through baseline, design logic, modification, risk, and experiment. |
-| Research growth | Graduate research training: stage, ability target, project loop, experiments, writing, and meetings. |
+| Research growth | Graduate research training: stage, field map, ability target, project loop, experiments, writing, and meetings. |
 | IELTS/TOEFL English | Paraphrase, coherence, argument, academic register, and clear expression. |
 | Interview prep | Graduate job and internship prep: research stories, projects, fundamentals, role fit, tradeoffs, and follow-ups. |
 | Note | Obsidian-ready summary of the useful learning result. |
@@ -79,6 +79,10 @@ I want to study C-JEPA: baseline, design choices, what I would change, and what 
 
 ```text
 我刚进实验室，想知道下一阶段该怎么训练科研能力。
+```
+
+```text
+I surveyed several papers. Help me draw a field map for this direction.
 ```
 
 ```text

@@ -8,8 +8,9 @@ description: >
   want to understand X", "teach me X", "help me learn X", "explain X in simple
   words", "我想学/理解/搞懂 X", "帮我讲清楚 X", "这篇论文/这个方法我没懂", IELTS/TOEFL
   English learning, graduate job/internship interview preparation, research
-  ability building, research project planning, or Obsidian-ready note
-  generation. The user does not need to mention Feynman or the skill name.
+  ability building, research project planning, literature survey field mapping,
+  or Obsidian-ready note generation. The user does not need to mention Feynman
+  or the skill name.
 ---
 
 # Feynman Learning
@@ -39,7 +40,7 @@ Default to one depth branch:
 | General concept | Feynman loop | `references/workflows.md`, `references/mental-model.md` |
 | Math/science/technical concept | Boundary/generalization | `references/boundary-generalization.md` |
 | Paper, method, architecture, process | Disruptive paper/pipeline reading | `references/disruptive-thinking.md` |
-| Research growth or project planning | Research ability roadmap | `references/research-growth.md` |
+| Research growth, project planning, or field map | Research ability roadmap | `references/research-growth.md` |
 | IELTS/TOEFL English | Exam English ability | `references/language-learning.md` |
 | Graduate job/internship interview | Interview preparation | `references/interview-prep.md` |
 | User asks for note | Obsidian note | `references/note-templates.md` |
@@ -58,8 +59,8 @@ Load only the files needed for the active branch:
 - `references/disruptive-thinking.md`: papers, methods, architectures, research
   ideas, and workflows.
 - `references/research-growth.md`: staged research learning, project planning,
-  idea formation, experiment ability, writing, presentation, and advisor meeting
-  preparation.
+  field mapping after literature surveys, idea formation, experiment ability,
+  writing, presentation, and advisor meeting preparation.
 - `references/learning-research.md`: attribution and distilled lessons from
   `pengsida/learning_research`; use it when the learner asks for research-growth
   guidance inspired by that project.
@@ -102,10 +103,13 @@ curiosity -> one target -> simplify -> teach-back -> one gap
 12. For research growth, identify the learner's stage before giving advice:
    broad foundation, project participation, independent first-author project, or
    mature research roadmap.
-13. Mark uncertain factual claims as needing verification.
-14. Do not create a long lecture unless the user explicitly asks for one; prefer
+13. After a literature survey, prefer a field map over a flat paper list: connect
+   problems, method families, representative papers, datasets/metrics,
+   assumptions, limitations, and open questions.
+14. Mark uncertain factual claims as needing verification.
+15. Do not create a long lecture unless the user explicitly asks for one; prefer
    one short scaffold and a teach-back prompt.
-15. When the user asks for a direct answer, give the smallest useful answer
+16. When the user asks for a direct answer, give the smallest useful answer
    first, then invite teach-back if learning is the goal.
 
 ## Gap Labels
@@ -196,6 +200,17 @@ curiosity -> one target -> simplify -> teach-back -> one gap
 当前只选一个能力训练：找问题、想 idea、做实验、分析失败、写论文、做 presentation、开会汇报。
 ```
 
+### Literature Field Map Check
+
+```text
+调研完论文后，不只列 paper list，而是画领域地图：
+1. 这个领域在解决什么核心问题？
+2. 方法可以分成哪几族？每一族的代表论文是什么？
+3. 常用数据集、指标和实验设置是什么？
+4. 每一族方法依赖什么假设，主要失败在哪里？
+5. 哪些空白、争议或边界可以变成新问题？
+```
+
 ### Interview Prep Check
 
 ```text
@@ -221,6 +236,8 @@ When wrapping up, produce only what is useful:
 - for research: baseline/design/change/risk/experiment
 - for research growth: current stage/one target ability/next concrete project
   action/advisor or peer discussion question
+- for literature survey: field map/problem-method-paper-dataset-metric-open
+  question structure
 - for math/technical: parent form/special cases/boundaries
 - for interview: answer/research or project evidence/tradeoffs/follow-ups
 

@@ -48,6 +48,12 @@ status: seedling
 |---|---|---|---|---|---|
 | {{step}} | {{baseline}} | {{current_design}} | {{my_change}} | {{risk}} | {{experiment}} |
 
+## Literature Field Map
+
+| Problem / Subproblem | Method Family | Representative Papers | Data / Metric | Limitation | Open Question |
+|---|---|---|---|---|---|
+| {{problem}} | {{method_family}} | {{papers}} | {{data_metric}} | {{limitation}} | {{open_question}} |
+
 ## Interview Answer
 
 Claim: {{claim}}
